@@ -6,7 +6,6 @@ void Xuat(int i,int p[], int stop[],int start[])
 	cout << "   " << p[i] << "\t\t\t" << start[i] << "\t\t" << stop[i] << endl;
 }
 
-
 int main()
 {
 	int p[10], burst[10] = { 0 }, start[10] = { 0 }, stop[10] = { 0 }, qtum, n;
@@ -46,7 +45,6 @@ int main()
 		//wtime[i] = wtime[i - 1] + qtum;
 	}
 	cout << "Process \t   Start time \t   Stop time" << endl;
-	
 	
 	int temp = 0;
 
@@ -107,40 +105,5 @@ int main()
 			}
 		}
 	}
-
 	system("PAUSE");
-
 }
-
-
-
-//int temp;
-//while (max >0)
-//{
-//	for (int i = 0; i < n; i++)
-//	{
-//
-//		if (burst[i] != 0)
-//		{
-//			if (burst[i] >= qtum)
-//			{
-//
-//				burst[i] -= qtum;
-//
-//				stop[i] = arrive[i] + qtum;
-//
-//
-//
-//				stop[i] = stop[i] + start[i] + qtum + wtime[i];
-//				wtime[i] = stop[i - 1] - start[i];
-//				temp = stop[i - 1];
-//				start[i] = stop[i - 1];
-//			}
-//			else burst[i] = 0;
-//		}
-//		if (flag == i)
-//		{
-//			max -= qtum;
-//		}
-//	}
-//}
